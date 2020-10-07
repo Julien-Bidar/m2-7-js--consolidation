@@ -61,8 +61,18 @@ const favoriteDessertsGroupB = {
 // }
 
 function groupByValue(obj) {
-  // do something
+  let newObj = {}
+  for (value in obj){
+    if (obj[value] in newObj === false){
+      newObj[obj[value]] = [value]
+    } else {
+      newObj[obj[value]].push(value)
+    }
+  }
+  return newObj
 }
+//notes for futur me: value actually target the key of obj, obj[value] gives us access to the value of obj. If this value is not a key
+//in newObj (line 66), line 67 sets a key with a list and value (key from obj) as a value. Else I push the value in the existing list for that key.
 
 // Verification via console.log()
 console.log("Group A", groupByValue(favoriteDessertsGroupA));

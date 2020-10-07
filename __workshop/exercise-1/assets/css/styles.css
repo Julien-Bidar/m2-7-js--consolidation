@@ -20,6 +20,7 @@ body {
   min-width: 320px;
 }
 
+/* smaller year div container */
 .bacon {
   background: var(--beau-blue);
   position: relative;
@@ -30,10 +31,12 @@ body {
   z-index: 1;
 }
 
+/* small year div */
 .bivrip {
   margin: 4px;
 }
 
+/* boom is the actual small year element */
 .bivrip .boom {
   background: transparent;
   border: 3px solid var(--ksu-purple);
@@ -47,6 +50,7 @@ body {
   transition: all 0.5s;
 }
 
+/* bigger year */
 .believe {
   color: #fff;
   top: -50px;
@@ -66,6 +70,7 @@ body {
   color: white;
 }
 
+/* top ten list div */
 .what-now {
   min-height: var(--large-band-height);
   display: flex;
@@ -75,6 +80,7 @@ body {
   padding: 32px;
 }
 
+/* top ten numbers */
 .that {
   color: var(--ksu-purple);
   cursor: pointer;
@@ -110,6 +116,7 @@ body {
   left: 16px;
 }
 
+/* food container */
 .other-stuff {
   flex: 1;
   background: var(--raspberry);
@@ -121,6 +128,7 @@ body {
   font-size: 72px;
 }
 
+/* aaaa is for the big number inside food container */
 .other-stuff .aaaa {
   color: #fff;
   position: relative;
@@ -142,6 +150,7 @@ body {
   transform: rotate(20deg);
 }
 
+/* bbbb is for the food name inside food container */
 .other-stuff .bbbb {
   color: #fff;
   background: var(--ksu-purple);
@@ -155,10 +164,12 @@ body {
   z-index: 1;
 }
 
+/* hover */
 .eeee {
   color: var(--melon);
 }
 
+/* header top div */
 .dddd {
   background: var(--ksu-purple);
   display: flex;
@@ -168,6 +179,7 @@ body {
   height: var(--small-band-height);
 }
 
+/* Grubhub title */
 .cccc {
   color: #fff;
   font-size: 60px;

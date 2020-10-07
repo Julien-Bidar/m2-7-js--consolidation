@@ -81,7 +81,16 @@ const inputData = {
 // ⛔️ ['can-blink-lights', null]
 
 function transformData(data) {
-  // Your code here
+  const {name, age, status, superpower1, superpower2, address1, addressCity, addressState, addressCountry, motherName, motherAge, motherStatus, motherSuperpower1, motherSuperpower2, bestFriendName, bestFriendAge, bestFriendStatus, bestFriendSuperpower1, bestFriendSuperpower2, girlfriendName, girlfriendAge, girlfriendStatus, girlfriendSuperpower1, girlfriendSuperpower2} = inputData
+  let addressObj = {address:{streetAddress:address1, city:addressCity, state: addressState, country: addressCountry}}
+  let relationships = [{type: "mother", name: motherName, age: motherAge, status: motherStatus, superpowers: []}, {type: "girlfriend", name: girlfriendName, age: girlfriendAge, status: girlfriendStatus, superpowers:[girlfriendSuperpower1, girlfriendSuperpower2]}]
+  let superpowers = [superpower1]
+  let mainPerson = {name, age, status}
+  let mainWithAddress = {...mainPerson, ...addressObj};
+  mainWithAddress.superpowers=[...superpowers];
+  mainWithAddress.relationships=[...relationships]
+  
+  return mainWithAddress
 }
 
 // Use a console.log to verify
