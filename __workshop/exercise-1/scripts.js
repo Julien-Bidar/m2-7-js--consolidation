@@ -15,11 +15,15 @@ let y2019 = true
 
 smallYear18.addEventListener("click", (e) => {
     bigYear.innerText = "2018"
+    smallYear18.classList.add("active")
+    smallYear19.classList.remove("active")
     y2018 = true
     y2019 = false
 })
 smallYear19.addEventListener("click", (e) => {
     bigYear.innerText = "2019"
+    smallYear19.classList.add("active")
+    smallYear18.classList.remove("active")
     y2018 = false
     y2019 = true
 })
